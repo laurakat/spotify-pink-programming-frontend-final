@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify Pink Programming Frontend</title>
+    <meta name="description" content="Spotify Pink Programming Workshop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../client.js"></script>
+    <script src="../playback.js"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Spotify Pink Programming Workshop</h1>
+    </header>
+    <main>
+      <section style="background-color:#F573A0;color:white;">
+        <h2 style="display:inline-block">Top 10 Tracks</h2>
+         <div class="input-group">
+          <input id="search-text" type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-black" type="button" onClick="search()">Search</button>
+          </span>
+        </div>
+        <div id="search-results"></div>
+        <div id="tracks"></div>
+      </section>
+    </main>
+  </body>
+</html>
